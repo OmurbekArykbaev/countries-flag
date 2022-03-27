@@ -20,7 +20,7 @@ body[data-theme="dark"] {
   --colors-bg: hsl(207, 26%, 17%);
   --colors-ui-base: hsl(209, 23%, 22%);
 
-  --shadow: rgba(245, 245, 245, 0.2) 0px 8px;
+  --shadow: rgba(100, 245, 245, 0.034) 0px 4px 15px;
 }
 body[data-theme="light"] {
   --colors-text: hsl(200, 15%, 8%);
@@ -36,4 +36,8 @@ body {
   color: var(---colors-text);
   font-weight: var(--fw-light);
   background-color: var(--colors-bg);
+}
+
+.sc-breuTD.drJWZM {
+  display: flex;
 }

@@ -16,7 +16,7 @@ const Wrapper = styled.section`
     gap: 5rem;
   }
   @media (min-width: 1024px) {
-    grid-template-columns: minmax(400px, 600px);
+    grid-template-row: minmax(400px, 600px);
   }
 `
 

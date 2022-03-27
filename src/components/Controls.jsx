@@ -24,10 +24,13 @@ const options = [
 ]
 
 const Wrapper = styled.div`
+  width: 100%;
   diplay: flex;
   flex-direction: column;
-
+  align-items: flex-start;
+  width: 280px;
   @media (min-width: 767px) {
+    diplay: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -35,11 +38,18 @@ const Wrapper = styled.div`
 `
 
 const CostomSelect = styled(Select)`
-  width: 200px;
   background-color: var(--colors-ui-base);
   border-radius: var(--radii);
   font-family: var(--family);
   border: none;
+  
+  margin-top: 1rem;
+
+  div {
+    background-color: var(--colors-ui-base);
+    color: var(--colors-text);
+s
+  }
 
   & > * {
     box-shadow: var(--shadow);
@@ -57,6 +67,8 @@ const CostomSelect = styled(Select)`
   & > div[id] {
     background-color: var(--colors-ui-base);
   }
+
+ 
 `
 const Controls = ({ onSearch }) => {
   const [region, setRegion] = useState("")
